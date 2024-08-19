@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <p class="p1"></p>
+    <p class="p2"></p>
+    <p class="p3"></p>
+    <p class="p4"></p>
+    <p class="p5"></p>
+    <p class="p6"></p>
+    <p class="p7"></p>
+    <p class="p8"></p>
+    <p class="p9"></p>
+    <p class="p10"></p>
+    <p class="p11"></p>
+    <p class="p12"></p>
+    <p class="p13"></p>
+    <p class="p14"></p>
+    <p class="p15"></p>
+    <p id="price-item-1"></p>
+    <p id="price-item-2"></p>
+    <p id="quantity-item-1"></p>
+    <p id="quantity-item-2"></p>
+    <p id="shipping-charges"></p>
+    <h3 id="total-cost"></h3>
+    <p id="total-marks"></p>
+    <p id="marks-obtained"></p>
+    <h3 id="percentage"></h3>
+    <p id="conversion-result"></p>
+    <p id="result"></p>
+    <p id="current-year"></p>
+    <p id="birth-year"></p>
+    <h3 id="possible-ages"></h3>
+    <p id="radius"></p>
+    <p id="circumference"></p>
+    <p id="area"></p>
+    
+    <script>
+
+        //  Answer 1
+        var p1 = document.querySelector('.p1');
+
+        var num1 = 3;
+        var num2 = 5;
+        var sum = num1 + num2;
+
+        p1.innerHTML = `sum of ${num1} and ${num2} is ${sum}`;
+
+        //  Answer 2
+
+        var p2 = document.querySelector('.p2');
+
+        var num1 = 3;
+        var num2 = 5;
+        var sum = num1 - num2;
+
+        p2.innerHTML = `subtract of ${num1} and ${num2} is ${sum}`;
+
+        var p3 = document.querySelector('.p3');
+
+        var num1 = 3;
+        var num2 = 5;
+        var sum = num1 * num2;
+
+        p3.innerHTML = `Multiply of ${num1} and ${num2} is ${sum}`;
+
+        var p4 = document.querySelector('.p4');
+
+        var num1 = 3;
+        var num2 = 5;
+        var sum = num1 / num2;
+
+        p4.innerHTML = `divided of ${num1} and ${num2} is ${sum}`;
+
+        var p5 = document.querySelector('.p5');
+
+        var num1 = 3;
+        var num2 = 5;
+        var sum = num1 % num2;
+
+        p5.innerHTML = `Reminder of ${num1} and ${num2} is ${sum}`;
+
+
+        var p6 = document.querySelector('.p6');
+
+        //  answer 3 a
+
+        let result = 5 + 3;
+        p6.innerHTML = `declare a variable  ${result}`;
+
+        //  answer 3 b
+        var p7 = document.querySelector('.p7');
+
+        a = 'Hassan';
+        var a;
+        p7.innerHTML = `value after variable declaration ${a}`;
+
+        //  answer 3 c
+        var p7 = document.querySelector('.p8');
+        let number = 10;
+        p7.innerHTML = `Initilize the variable with some number ${number}`;
+
+
+        //  answer 3 d
+
+        var p9 = document.querySelector('.p9');
+        let number1 = 5;
+        p9.innerHTML = `Initilize  variable  ${number1}`;
+
+
+        // ANSWER 3 E
+
+        var p10 = document.querySelector('.p10');
+        let num3 = 5;
+        num3++;
+        p10.innerHTML = ` variable after increment is  ${num3}`;
+
+        // ANSWER 3 g
+        num3 = num3 + 7
+        let p11 = document.querySelector('.p11');
+        p11.innerHTML = ` variable after increment { + 7 }  ${num3}`;
+
+        // ANSWER 3 i
+        num3--;
+        let p12 = document.querySelector('.p12');
+        p12.innerHTML = ` variable after increment { - 1 }  ${num3}`;
+
+        // ANSWER 3 k
+        num3 = num3 % 3;
+        let p13 = document.querySelector('.p13');
+        p13.innerHTML = `The remonder is   ${num3}`;
+
+        // answer 4
+        var price = 600;
+        var fivePerson = 5;
+        var total_Price = price * fivePerson;
+        var p14 = document.querySelector('.p14');
+        p14.innerHTML = `Total cost to by 5 tickets to a movie is ${total_Price} PKR`;
+
+
+        //  answer 5
+
+        var result1 = "";
+        result1 += "4 x 1 = " + (4 * 1) + "<br>";
+        result1 += "4 x 2 = " + (4 * 2) + "<br>";
+        result1 += "4 x 3 = " + (4 * 3) + "<br>";
+        result1 += "4 x 4 = " + (4 * 4) + "<br>";
+        result1 += "4 x 5 = " + (4 * 5) + "<br>";
+        result1 += "4 x 6 = " + (4 * 6) + "<br>";
+        result1 += "4 x 7 = " + (4 * 7) + "<br>";
+        result1 += "4 x 8 = " + (4 * 8) + "<br>";
+        result1 += "4 x 9 = " + (4 * 9) + "<br>";
+        result1 += "4 x 10 = " + (4 * 10) + "<br>";
+
+        var p14 = document.querySelector('.p14');
+        p14.innerHTML = `table of 4 <br><br>${result1}`;
+
+
+
+        // answer 7
+
+        var priceOfItem1 = 650;  
+        var priceOfItem2 = 100;  
+
+        var quantityOfItem1 = 3; 
+        var quantityOfItem2 = 7; 
+
+        var shippingCharges = 100;  
+
+        var totalCost = (priceOfItem1 * quantityOfItem1) +  (priceOfItem2 * quantityOfItem2) + shippingCharges;
+
+        document.getElementById("price-item-1").textContent = "Price of Item 1:  " + priceOfItem1;
+        document.getElementById("price-item-2").textContent = "Price of Item 2:  " + priceOfItem2;
+        document.getElementById("quantity-item-1").textContent = "Quantity of Item 1: " + quantityOfItem1;
+        document.getElementById("quantity-item-2").textContent = "Quantity of Item 2: " + quantityOfItem2;
+        document.getElementById("shipping-charges").textContent = "Shipping Charges: " + shippingCharges;
+        document.getElementById("total-cost").textContent = "Total Cost: " + totalCost;
+
+
+// answer 8
+
+
+        var totalMarks = 980;  
+        var marksObtained = 804;  
+
+        var percentage = (marksObtained / totalMarks) * 100;
+
+       
+        document.getElementById("total-marks").textContent = "Total Marks: " + totalMarks;
+        document.getElementById("marks-obtained").textContent = "Marks Obtained: " + marksObtained;
+        document.getElementById("percentage").textContent = "Percentage: " + percentage + "%";
+
+        // answer 9
+
+        var usd = 10;  
+        var sar = 25;  
+
+      
+        var usdToPkr = 104.80; 
+        var sarToPkr = 28;    
+
+       
+        var totalPkr = (usd * usdToPkr) + (sar * sarToPkr);
+
+        
+        document.getElementById("conversion-result").textContent = "Total in Pakistani Rupees: " + totalPkr;
+
+        // answer 10
+        var num5 = 10;
+
+        var result5 = ((number + 5) * 10) / 2;
+
+document.getElementById("result").textContent = "Final result: " + result5;
+
+// answer 11
+
+        var currentYear = 2016;
+        var birthYear = 1992;
+
+        var age1 = currentYear - birthYear;
+
+        document.getElementById("current-year").textContent = "Current Year: " + currentYear;
+        document.getElementById("birth-year").textContent = "Birth Year: " + birthYear;
+        document.getElementById("possible-ages").textContent = "Possible Ages: " + age1 ;
+
+        // answer 12
+
+       
+
+    </script>
+
+
+</body>
+
+</html>
